@@ -7,11 +7,11 @@ VlogVerse is a scalable and modular backend application tailored for modern cont
 
 ## 🔧 Tech Stack
 
-- **Backend Framework:** Express.js
-- **Database:** MongoDB + Mongoose ODM
-- **Authentication:** JWT-based Auth, Role-Based Access Control
-- **Media Handling:** File upload APIs (video, image support)
-- **API Architecture:** RESTful, Modular, Scalable
+- **Backend Framework:** Express.js  
+- **Database:** MongoDB + Mongoose ODM  
+- **Authentication:** JWT-based Auth, Role-Based Access Control  
+- **Media Handling:** File upload APIs (video, image support)  
+- **API Architecture:** RESTful, Modular, Scalable  
 
 ---
 
@@ -20,11 +20,11 @@ VlogVerse is a scalable and modular backend application tailored for modern cont
 ### 🎬 Video & Reels Management
 - CRUD operations for **vlogs (long-form)** and **reels (short-form)**
 - File handling with metadata storage
-- Supports media uploads via multipart/form-data
+- Supports media uploads via `multipart/form-data`
 
 ### 📝 Microblogging (Tweet-style Posts)
 - Text-based updates with optional media
-- Designed for creators to post quick thoughts, news, or behind-the-scenes
+- Designed for creators to post quick thoughts, news, or behind-the-scenes content
 
 ### 👤 User Profiles & Follower System
 - Profile creation & editing
@@ -52,13 +52,14 @@ VlogVerse is a scalable and modular backend application tailored for modern cont
 
 ## 📁 Project Structure
 
-/controllers → Route handlers
-/routes → API endpoints
-/models → Mongoose schemas
-/middleware → Auth & validation logic
-/utils → Helper functions
-/uploads → Stored media files
-
+```
+/controllers     → Route handlers  
+/routes          → API endpoints  
+/models          → Mongoose schemas  
+/middleware      → Auth & validation logic  
+/utils           → Helper functions  
+/uploads         → Stored media files  
+```
 
 ---
 
@@ -68,47 +69,59 @@ VlogVerse is a scalable and modular backend application tailored for modern cont
 ```bash
 git clone https://github.com/Nikhil-N-Nadig/VlogVerse-Backend.git
 cd VlogVerse-Backend
+```
+
 ### 2. Install dependencies
+```bash
 npm install
-### 3. Setup environment variables
-Create a .env file in the root with the following:
+```
+
+### 3. Setup environment variables  
+Create a `.env` file in the root with the following:
+```env
 PORT=5000
 MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_jwt_secret
-4. Start the server
+```
+
+### 4. Start the server
+```bash
 npm start
-
-
-🧪 API Testing
-You can test endpoints using:
-
-Postman (recommended)
-
-Swagger UI (coming soon)
-
-📌 Future Enhancements
-Redis caching for frequently accessed routes
-
-Swagger documentation
-
-Video processing pipeline (thumbnails, compression)
-
-Admin dashboard for user/content moderation
-
-GraphQL support for flexible client queries
-
-🤝 Contributing
-Pull requests and contributions are welcome!
-For major changes, please open an issue first to discuss what you would like to change.
-
-📬 Contact
-Created with 💻 by Nikhil N Nadig
-
-📄 License
-MIT License
+```
 
 ---
 
-Let me know if you'd like a **matching frontend README**, **project banner**, or **deployment instructions for Vercel/Render/Railway**!
+## 🧪 API Testing
 
+You can test endpoints using:
+- [Postman](https://www.postman.com/) (recommended)
+- Swagger UI (coming soon)
 
+---
+
+## 📌 Future Enhancements
+
+- Redis caching for frequently accessed routes  
+- Swagger documentation for all APIs  
+- Video processing pipeline (e.g., thumbnail generation, compression)  
+- Admin dashboard for user/content moderation  
+- GraphQL support for flexible querying  
+
+---
+
+## 🤝 Contributing
+
+Pull requests and contributions are welcome!  
+For major changes, please open an issue first to discuss what you'd like to change.
+
+---
+
+## 📬 Contact
+
+Created with 💻 by [Nikhil N Nadig](https://github.com/Nikhil-N-Nadig)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
